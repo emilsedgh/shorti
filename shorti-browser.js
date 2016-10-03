@@ -220,7 +220,7 @@ function Shorti(options, callback){
                 var property = 'backgroundSize';
                 var value = prop_element;
               }
-              if (prop_element == 'center') {
+              if (['top', 'bottom', 'left', 'right', 'center'].hasIndex(prop_element) > 0) {
                 var property = 'backgroundPosition';
                 var value = prop_element;
               }
